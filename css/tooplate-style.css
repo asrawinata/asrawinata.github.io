@@ -383,11 +383,11 @@ b, strong {
 }
 .owl-carousel .owl-nav .owl-prev:before {
   content: '\e833';
-  left: -45px;
+  left: -80px;
 }
 .owl-carousel .owl-nav .owl-next:before {
   content: '\e836';
-  right: -45px;
+  right: -80px;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
@@ -568,3 +568,16 @@ b, strong {
     vertical-align: top;
   }
 }
+
+
+/* background
+.container{
+  overflow: hidden;
+}
+
+.sliding-background{
+  background: url(https://wallpaperaccess.com/full/269150.jpg) no-repeat;
+  height: 3000;
+  width: 6000; /*3000*2
+ }
+ */
