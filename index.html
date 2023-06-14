@@ -1,3 +1,36 @@
+Our product team need to install a code snippet to our website(s) in order to connect Maze, our research tool, and embed live surveys for user feedback.
+
+The snippet should be pasted immediately after the website’s <head>.
+
+Here’s the code snippet for your ease:
+
+<script>
+(function (m, a, z, e) {
+  var s, t;
+  try {
+    t = m.sessionStorage.getItem('maze-us');
+  } catch (err) {}
+
+  if (!t) {
+    t = new Date().getTime();
+    try {
+      m.sessionStorage.setItem('maze-us', t);
+    } catch (err) {}
+  }
+
+  s = a.createElement('script');
+  s.src = z + '?t=' + t + '&apiKey=' + e;
+  s.async = true;
+  a.getElementsByTagName('head')[0].appendChild(s);
+  m.mazeUniversalSnippetApiKey = e;
+})(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '33d182b2-7d1f-4752-a05c-7f001403d20f');
+</script>
+
+You can also find documentation with additional information here: https://help.maze.co/hc/en-us/articles/9800356063891
+
+Best,
+Asra Winata
+
 <!doctype html>
 <html lang="en">
   <head>
